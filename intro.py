@@ -12,10 +12,10 @@ results = parsed['RelatedTopics']
 for r in results:
     if 'Text' in r:
         print(r['FirstURL'] + ' - ' + r['Text'])
-    
 
 
-# Do a search with requests
+
+#Do a search with requests
 import requests
 
 params = dict(q= 'Sausages', format= 'json')
@@ -25,8 +25,8 @@ results = parsed['RelatedTopics']
 for r in results:
     if 'Text' in r:
         print(r['FirstURL'] + ' - ' + r['Text'])
-        
-        
+
+
 # Do a search with the duckduckgo module
 import duckduckgo
 for r in duckduckgo.query('Sausages').results:
