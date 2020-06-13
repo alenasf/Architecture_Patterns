@@ -16,7 +16,6 @@ order_lines = Table(
     Column('orderid', String(255)),
 )
 
-
 batches = Table(
     'batches', metadata,
     Column('id', Integer, primary_key=True, autoincrement=True),
