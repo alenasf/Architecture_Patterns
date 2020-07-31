@@ -1,5 +1,5 @@
 from datetime import date, timedelta
-import pytest
+# import pytest
 from model import allocate,  Batch, OrderLine, OutOfStock
 
 

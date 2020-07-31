@@ -1,4 +1,5 @@
-from datatime import date
+
+from datetime import date
 from model import Batch, OrderLine
 
 
@@ -10,7 +11,7 @@ def test_allocating_to_a_batch_reduces_the_available_quantity():
 
     batch.allocate(line)
 
-    assert  batch.available_quantity == 18
+    assert batch.available_quantity == 18
 
 
 # Testing logic for what we can allocate
